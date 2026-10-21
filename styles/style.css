@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -48,4 +51,76 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  inline-size: 1140px;
+}
+
+.result {
+  flex-shrink: 0;
+  inline-size: 711px;
+}
+
+.content__details {
+  flex-grow: 1;
+  min-inline-size: 0;
+  align-self: stretch;
+}
+
+.result__video-container {
+  position: relative;
+  inline-size: 100%;
+  block-size: 386px;
+  margin-block-end: 16px;
+}
+
+.result__video {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  margin-block-end: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  inline-size: fit-content;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  inline-size: 225px;
+  block-size: 27px;
+  padding: 0;
+  border: none;
+  border-block: 1px solid currentColor;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.2;
+  background-color: transparent;
+  appearance: none;
 }
