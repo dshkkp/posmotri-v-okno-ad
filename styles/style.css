@@ -289,9 +289,7 @@ ol {
 
 .search-form__textfield:focus,
 .button:focus,
-.content__card-link:focus {
-  outline: none;
-}
+.content__card-link:focus { outline: none;}
 
 .search-form__label:has(:focus-visible),
 .button:focus-visible,
